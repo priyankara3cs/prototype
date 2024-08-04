@@ -1,0 +1,49 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "app",
+  "author": "liyanagelahiru",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "dev": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-brands-svg-icons": "^6.5.2",
+    "@fortawesome/free-regular-svg-icons": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "accessibility-react-widget": "^1.0.5",
+    "aos": "^2.3.4",
+    "babel-plugin-styled-components": "^2.1.4",
+    "framer-motion": "^11.2.13",
+    "gatsby": "^5.13.3",
+    "gatsby-plugin-canonical-urls": "^5.13.1",
+    "gatsby-plugin-google-gtag": "^5.13.1",
+    "gatsby-plugin-image": "^3.13.1",
+    "gatsby-plugin-manifest": "^5.13.1",
+    "gatsby-plugin-react-helmet": "^6.13.1",
+    "gatsby-plugin-sharp": "^5.13.1",
+    "gatsby-plugin-sitemap": "^6.13.1",
+    "gatsby-plugin-styled-components": "^6.13.1",
+    "gatsby-transformer-sharp": "^5.13.1",
+    "mdb-react-ui-kit": "^8.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^5.2.1",
+    "react-scroll-parallax": "^3.4.5",
+    "react-slick": "^0.30.2",
+    "react-stepper-horizontal": "^1.0.11",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^6.1.12"
+  }
+}
