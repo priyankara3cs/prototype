@@ -1,13 +1,25 @@
 import React from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./new.css";
 
 const Banner = () => {
+  React.useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   return (
     <div>
-      <Parallax pages={2}>
+      {/* Section 1 */}
+      <Parallax pages={2} className="parallax-container">
         {/* Background Layer */}
-        <div className="background-container" />
+        <ParallaxLayer offset={0} speed={0} className="background-layer">
+          {/* Empty layer for background */}
+        </ParallaxLayer>
 
         {/* Car Image Layer */}
         <ParallaxLayer
@@ -20,11 +32,7 @@ const Banner = () => {
           }}
         >
           <div className="car">
-            <img
-              src="/images/car.webp"
-              alt="Car"
-              style={{ width: "300px", height: "300px" }}
-            />
+            <img src="/images/car.webp" alt="Car" data-aos="fade-up" />
           </div>
         </ParallaxLayer>
 
@@ -36,23 +44,19 @@ const Banner = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            color: "white",
-            fontSize: "2rem",
+            textAlign: "center",
           }}
         >
           <div className="main-topic">
-            <h1>Main Topic</h1>
-            <h2>sub Topic</h2>
+            <h1 data-aos="fade-right">Main Topic</h1>
+            <h2 data-aos="fade-left">Sub Topic</h2>
           </div>
         </ParallaxLayer>
       </Parallax>
       {/* Section 2 */}
-      <p>
-        Welcome to the Parallax Scrolling Website project! This project
-        showcases an interactive and engaging website with a parallax scrolling
-        effect. The website is designed using HTML5, CSS3, and JavaScript to
-        create an immersive experience for users.{" "}
-      </p>
+      <div className="section2">
+        <h1>Next Section</h1>
+      </div>
     </div>
   );
 };

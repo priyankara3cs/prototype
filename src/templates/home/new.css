@@ -1,12 +1,15 @@
-.background-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.parallax-container {
   position: relative;
+  width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: url("/images/background1.jpeg") repeat-x;
+}
+
+.background-layer {
+  background: url('/images/background1.jpeg') repeat-x;
+  background-size: cover;
   animation: moveBackground 100s linear infinite;
+  height: 100%;
 }
 
 @keyframes moveBackground {
@@ -16,6 +19,11 @@
   100% {
     background-position-x: 100%;
   }
+}
+
+.car img {
+  width: 350px;
+  height: 350px;
 }
 
 .car {
@@ -43,4 +51,8 @@
   color: white;
   font-size: 2rem;
   text-align: center;
+}
+
+.section2 {
+  padding: 20px;
 }
