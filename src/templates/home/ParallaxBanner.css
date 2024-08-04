@@ -1,0 +1,35 @@
+.parallax-container {
+  position: relative;
+  height: 800px;
+  overflow: hidden;
+}
+
+.parallax-layer {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.planet {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.land {
+  bottom: 0;
+}
+
+.people {
+  bottom: 0;
+}
+
+.topic {
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  color: white;
+}
