@@ -1,7 +1,18 @@
-.parallax-container {
+/* .parallax-container {
   position: relative;
   height: 800px;
   overflow: hidden;
+  background: url("/images/background2.jpeg") repeat-x;
+  animation: moveBackground 100s linear infinite;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
 }
 
 .parallax-layer {
@@ -15,6 +26,19 @@
 .planet {
   top: 50%;
   transform: translateY(-50%);
+  animation: growInfinite 150s infinite;
+}
+
+@keyframes growInfinite {
+  0% {
+    transform: translateY(-50%) scale(1);
+  }
+  50% {
+    transform: translateY(-50%) scale(1.5);
+  }
+  100% {
+    transform: translateY(-50%) scale(1);
+  }
 }
 
 .land {
@@ -27,9 +51,9 @@
 
 .topic {
   position: absolute;
-  bottom: 100px;
+  top: 100px;
   width: 100%;
   text-align: center;
   font-size: 2em;
   color: white;
-}
+} */
