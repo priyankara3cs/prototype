@@ -1,12 +1,19 @@
 .parallax-container {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 200vh; /* Adjusted for 2 sections */
   overflow: hidden;
 }
 
 .background-layer {
-  background: url('/images/background1.jpeg') repeat-x;
+  background: url("/images/background1.jpeg") repeat-x;
+  background-size: cover;
+  animation: moveBackground 100s linear infinite;
+  height: 100%;
+}
+
+.background-layer-2 {
+  background: url("/images/background2.jpeg") repeat-x;
   background-size: cover;
   animation: moveBackground 100s linear infinite;
   height: 100%;
@@ -29,6 +36,27 @@
 .car {
   position: relative;
   animation: growInfinite 50s infinite;
+}
+
+.planet img {
+  width: 300px;
+  height: 300px;
+}
+
+.planet {
+  position: relative;
+  animation: growInfinite 50s infinite;
+}
+
+.land img {
+  width: 100%;
+  height: auto;
+}
+
+.land {
+  position: absolute;
+  bottom: -5px;
+  width: 100%;
 }
 
 @keyframes growInfinite {

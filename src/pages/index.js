@@ -1,5 +1,5 @@
 import React from "react";
-import HomePage from "../templates/home/HomePageNew";
+import HomePage from "../templates/home/HomePage";
 
 export default function index() {
   return (
