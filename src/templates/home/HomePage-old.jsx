@@ -14,7 +14,7 @@ const Banner = () => {
 
   return (
     <div>
-      <Parallax pages={3} className="parallax-container">
+      <Parallax pages={4} className="parallax-container">
         {/* Section 1 */}
         {/* Background Layer */}
         <ParallaxLayer offset={0} speed={0} className="background-layer">
@@ -87,9 +87,6 @@ const Banner = () => {
           <div className="land">
             <img src="/images/land.png" alt="land" />
           </div>
-          <div className="people">
-            <img src="/images/people.png" alt="land" />
-          </div>
         </ParallaxLayer>
 
         {/* Main Topic Text Layer */}
@@ -108,23 +105,12 @@ const Banner = () => {
             <h2 data-aos="fade-left">Sub Topic</h2>
           </div>
         </ParallaxLayer>
-
-        {/* Section 3 */}
-        <ParallaxLayer
-          offset={2}
-          speed={1}
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            backgroundColor: "white",
-          }}
-        >
-          <div className="section2">
-            <h1>Next Section</h1>
-          </div>
-        </ParallaxLayer>
       </Parallax>
+
+      {/* Section 3 */}
+      <div className="section2">
+        <h1>Next Section</h1>
+      </div>
     </div>
   );
 };
