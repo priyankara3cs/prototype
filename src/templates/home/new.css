@@ -1,7 +1,7 @@
 .parallax-container {
   position: relative;
   width: 100%;
-  height: 200vh; /* Adjusted for 2 sections */
+  height: 100vh; /* Adjusted for 2 sections */
   overflow: hidden;
 }
 
