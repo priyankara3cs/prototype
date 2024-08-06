@@ -63,6 +63,10 @@
   overflow: hidden;
 }
 
+.parallax-container::-webkit-scrollbar {
+  display: none;
+}
+
 .background-layer {
   background: url("/images/background1.jpeg") repeat-x;
   background-size: cover;
