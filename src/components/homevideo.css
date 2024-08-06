@@ -4,6 +4,7 @@
   z-index: -1;
   background: url("/images/background2.jpeg") repeat-x;
   animation: moveBackground 100s linear infinite;
+  overflow: hidden;
 }
 
 @keyframes moveBackground {
@@ -28,6 +29,7 @@
   top: 0;
   left: 0;
   font-size: 30px;
+  overflow: hidden;
 }
 
 @keyframes slider-up {
