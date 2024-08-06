@@ -7,10 +7,7 @@ import Slide2 from "./Slide2";
 const CustomSlider = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const isScrollingRef = useRef(false);
-  const [
-    // showContent,
-    setShowContent,
-  ] = useState(false);
+  const [showContent, setShowContent] = useState(false);
   const sliderRef = useRef(null);
 
   const handleScroll = (event) => {
