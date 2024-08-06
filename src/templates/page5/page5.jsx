@@ -13,7 +13,7 @@ export default function Page5() {
   }, []);
 
   return (
-    <div style={{ overflow: "hidden" }}>
+    <div>
       <div className="hero-container">
         <Hero />
       </div>
