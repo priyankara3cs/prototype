@@ -12,7 +12,10 @@ const Slide2 = ({ isActive }) => {
   }, []);
 
   return (
-    <div className={`slide ${isActive ? "active" : ""}`}>
+    <div
+      className={`slide ${isActive ? "active" : ""}`}
+      style={{ overflow: "hidden" }}
+    >
       <div className="custom-slider-wrapper"></div>
     </div>
   );

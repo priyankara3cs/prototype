@@ -40,7 +40,10 @@ const Slide1 = ({ isActive }) => {
   };
 
   return (
-    <div className={`slide ${isActive ? "active" : ""}`}>
+    <div
+      className={`slide ${isActive ? "active" : ""}`}
+      style={{ overflow: "hidden" }}
+    >
       <Parallax className="parallax-container" pages={1}>
         {/* Background Layer */}
         <ParallaxLayer offset={0} speed={0} className="background-layer" />
