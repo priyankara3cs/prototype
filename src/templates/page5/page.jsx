@@ -1,8 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "../../components/homevideo.css";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
+import Cursor from "../../components/Cursor";
 
 const ContractManufacturing = () => {
+  const [scaling] = useState(false);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -11,6 +14,9 @@ const ContractManufacturing = () => {
     <ParallaxProvider>
       <div style={{ backgroundColor: "#121718" }}>
         <div style={{ position: "relative" }}>
+          <div>
+            <Cursor scaling={scaling} />
+          </div>
           <div className="background-video" />
           <div className="top-font-block">
             <div className="planet">
