@@ -1,0 +1,21 @@
+.large_circle,
+.small_circle {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: transform 0.1s;
+}
+
+.large_circle {
+  width: 64px;
+  height: 64px;
+  background-color: rgba(134, 135, 100, 0.491);
+  /* border: 5px solid rgba(173, 174, 122, 0.249); */
+}
+
+.small_circle {
+  width: 16px;
+  height: 16px;
+  background-color: #a95b3ccd;
+  border: none;
+}
