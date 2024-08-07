@@ -37,7 +37,7 @@ const CustomSlider = () => {
 
     setTimeout(() => {
       isScrollingRef.current = false;
-    }, 100); // Adjust the debounce time as needed
+    }, 1010); // Adjust the debounce time as needed
   };
 
   useEffect(() => {

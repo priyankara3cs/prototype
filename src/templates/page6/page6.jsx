@@ -22,7 +22,9 @@ export default function Page5() {
       </div>
 
       <div className="additional-content">
-        <div className="additional-content-para"></div>
+        <center>
+          <div className="additional-content-para"></div>
+        </center>
       </div>
     </div>
   );
