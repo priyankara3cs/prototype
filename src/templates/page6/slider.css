@@ -26,8 +26,9 @@ html {
 .custom-slider-wrapper {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 99.999vh;
   overflow: hidden;
+  overflow-y: hidden;
 }
 
 .custom-slider {
@@ -164,7 +165,7 @@ html {
 
 .land {
   position: absolute;
-  bottom: -15px;
+  bottom: -25px !important;
   width: 100%;
   height: 150px;
   animation: growInfinitepeople 50s infinite;

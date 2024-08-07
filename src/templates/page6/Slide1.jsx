@@ -42,8 +42,13 @@ const Slide1 = ({ isActive }) => {
   return (
     <div
       className={`slide ${isActive ? "active" : ""}`}
+      style={{ overflow: "hidden !important" }}
     >
-      <Parallax className="parallax-container" pages={1}>
+      <Parallax
+        className="parallax-container"
+        pages={1}
+        style={{ overflow: "hidden !important" }}
+      >
         {/* Background Layer */}
         <ParallaxLayer offset={0} speed={0} className="background-layer" />
 
@@ -56,10 +61,16 @@ const Slide1 = ({ isActive }) => {
             justifyContent: "center",
             alignItems: "center",
             animation: "slider-up 1s",
+            overflow: "hidden !important",
           }}
         >
-          <div className="car">
-            <img src="/images/car.webp" alt="Car" data-aos="fade-up" />
+          <div className="car" style={{ overflow: "hidden !important" }}>
+            <img
+              src="/images/car.webp"
+              alt="Car"
+              data-aos="fade-up"
+              style={{ overflow: "hidden !important" }}
+            />
           </div>
         </ParallaxLayer>
 
@@ -72,12 +83,14 @@ const Slide1 = ({ isActive }) => {
             justifyContent: "center",
             alignItems: "center",
             textAlign: "center",
+            overflow: "hidden !important",
           }}
         >
-          <div className="main-topic">
+          <div className="main-topic" style={{ overflow: "hidden !important" }}>
             <h1
               style={{
                 animation: "slider-left 1s",
+                overflow: "hidden !important",
               }}
             >
               Main Topic
@@ -85,6 +98,7 @@ const Slide1 = ({ isActive }) => {
             <h2
               style={{
                 animation: "slider-right 1s",
+                overflow: "hidden !important",
               }}
             >
               Sub Topic

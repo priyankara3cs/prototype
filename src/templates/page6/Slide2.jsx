@@ -14,9 +14,12 @@ const Slide2 = ({ isActive }) => {
   return (
     <div
       className={`slide ${isActive ? "active" : ""}`}
-      style={{ overflow: "hidden" }}
+      style={{ overflow: "hidden !important" }}
     >
-      <div className="custom-slider-wrapper"></div>
+      <div
+        className="custom-slider-wrapper"
+        style={{ overflow: "hidden !important" }}
+      ></div>
     </div>
   );
 };
