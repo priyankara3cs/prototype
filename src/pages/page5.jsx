@@ -1,5 +1,5 @@
 import React from "react";
-import Page from "../templates/page5/page5";
+import Page from "../templates/page6/page6";
 
 export default function page3() {
   return (
